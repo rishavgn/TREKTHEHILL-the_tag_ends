@@ -1,0 +1,83 @@
+.container{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(228, 228, 228);
+}
+
+.box_page{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background: rgb(245, 245, 245);
+    padding: 20px;
+    position: absolute;
+    z-index: 0;
+}
+
+.login_card{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 5%) 0px 3px 15px 0px;
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 40px 50px;
+    position: relative;
+
+}
+.gJPMca {
+    font-size: 16px;
+    font-weight: 600;
+  
+    
+    margin: 0px;
+    padding: 10px 0px 5px;
+    color: rgb(25, 25, 25);
+    text-align: center;
+}
+
+.email_div, .password_div{
+    display: block;
+    user-select: none;
+    position: relative;
+    transition: opacity 150ms ease-in-out 0s;
+    padding-bottom: 30px;
+}
+
+#head_label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.57;
+    color: rgb(25, 25, 25);
+    margin-bottom: 8px;
+}
+
+#head_input{
+    height: 44px;
+    border: 1px solid rgb(204, 207, 207);
+    padding: 0px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: rgb(25, 25, 25);
+    width: 100%;
+    transition: border-color 250ms ease-in-out 0s;
+    line-height: 1.5;
+    box-sizing: border-box;
+    appearance: none;
+}
+
+.btn_login {
+    background: rgb(204, 207, 207);
+    border-color: transparent;
+    color: white;
+   
+   
+}

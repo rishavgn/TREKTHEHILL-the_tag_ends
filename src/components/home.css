@@ -1,0 +1,69 @@
+.main_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.left_box{
+    position: absolute;
+    left: 0;
+    width: 48%;
+    margin: 3%;
+    padding: 5%;
+}
+.right_box{
+    position: absolute;
+right: 0;
+width: 20%;
+margin-top: 3% ;
+margin-right:40px ;
+}
+.form_box{
+    background-color: rgb(37, 37, 37);
+
+}
+
+.right_box h2{
+    text-align: center;
+    margin-top:20px ;
+}
+
+
+
+.email_div, .password_div{
+    display: block;
+    user-select: none;
+    position: relative;
+    transition: opacity 150ms ease-in-out 0s;
+    padding-bottom: 30px;
+}
+
+#head_label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.57;
+    color: white;
+    margin-bottom: 8px;
+}
+
+#head_input{
+    height: 44px;
+    border: 1px solid rgb(204, 207, 207);
+    padding: 0px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: rgb(25, 25, 25);
+    width: 100%;
+    transition: border-color 250ms ease-in-out 0s;
+    line-height: 1.5;
+    box-sizing: border-box;
+    appearance: none;
+}
+
+.btn_login {
+    background: rgb(220, 61, 21);
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+   
+   
+}

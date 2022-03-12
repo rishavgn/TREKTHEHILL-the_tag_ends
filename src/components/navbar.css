@@ -1,0 +1,25 @@
+
+.navbar_ul{
+    right: 0;
+    position: relative;
+    display: flex;
+}
+#ul_nav{
+    position: absolute;
+    right: 0;
+   margin-right: 100px;
+    padding: 30px;
+
+}
+#ul_nav li{
+    list-style: none;
+    padding: 30px
+    
+}
+
+#link_route{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.3em;
+}

@@ -1,0 +1,23 @@
+.container{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 228, 228);
+  }
+  
+  .box_page{
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      min-height: 100vh;
+      top: 0px;
+      left: 0px;
+      overflow: hidden;
+      background: rgb(245, 245, 245);
+      padding: 20px;
+      position: absolute;
+     
+  }
