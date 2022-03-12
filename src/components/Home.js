@@ -19,7 +19,7 @@ export default function Home() {
 
   function handleSubmit(event) {
     event.preventDefault()
-    // submitToApi(formData)
+    // submitToApi(formData
     console.log(user)
 }
   return (
