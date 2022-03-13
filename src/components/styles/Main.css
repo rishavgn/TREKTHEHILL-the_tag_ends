@@ -1,0 +1,171 @@
+:root{
+    --primary-font-color: #141E27;
+    --secondary-font-color: #37373a;
+    --border-hover: #28FFBF;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--secondary-font-color);
+}
+
+h2{   
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: var(--primary-font-color);
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.mrg-right{
+    margin-right: 3%;
+}
+
+.btn{
+    padding: 3.5% 14%;
+    outline: none;
+    border: 1px solid var(--border-hover);
+    border-radius: 7px;
+    background-color: #28DF99;
+    color: white;
+    transition: 0.1s ease-in all;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #04DEAD;
+    border: 1px solid var(--border-hover)
+}
+
+.btn-transparant{
+    padding: 3.5% 14%;
+    outline: none;
+    background: transparent;
+    color: #04DEAD;
+    border: 1px solid var(--border-hover);
+    transition: 0.1s ease-in all;
+}
+
+.btn-transparant:hover{
+    background-color: #28DF99;
+    color: white;
+
+}
+
+.inline{
+    display: inline;
+}
+
+input, textarea{
+    display: block;
+    background: aliceblue;
+    border: 1px solid aliceblue;
+    transition: 0.1s ease-in all;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    border-style: none;
+}
+
+label{
+    margin-right: 30px;
+}
+/* Appointment Details */
+
+
+select{
+    padding: 0.6em 3rem;
+    background: aliceblue;
+    border: 1px solid aliceblue;
+    outline: none;
+    transition: 0.1s ease-in all;
+}
+
+select:hover, input:hover, textarea:hover{
+    border: 1px solid var(--border-hover);
+}
+
+.space input[type="date"]{
+    display: inline;
+    padding: 0.4rem 3rem;
+}
+
+.patient-problem{
+    margin-bottom: 5%;
+}
+
+#height, #weight{
+    padding: 0.6rem 4rem;
+    border: 1px solid aliceblue;
+    transition: 0.1s ease-in all;
+}
+
+#height:hover, #weight:hover{
+    border: 1px solid var(--border-hover);
+}
+
+.div-bmi{
+    margin-top: 8%;
+}
+
+
+/* Patient Card */
+.patient-card{
+    padding: 3% 0 5% 10%;
+}
+.patient-card-child-wrapper{
+    padding-bottom: 8%;
+    padding-left: 10%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0 0 26px -15px rgb(70 70 70), 0 0 1px 0px rgb(140 141 141);
+}
+.patient-card h2{
+    margin: 9% auto 8% auto;
+}
+
+.patient-card img{
+    width: 25%;
+    border-radius: 50%;
+    padding: 10%;
+}
+
+.patient-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-choose-doctor, .space{
+    padding: 0.8em 0;
+}
+
+.patient-card input{
+    border: 1px solid aliceblue;
+    margin-bottom: 5%;
+    padding: 0.7rem 4rem;
+}
+
+.patient-card input:hover{
+    border: 1px solid var(--border-hover)
+}
+
+.patient-card button{
+    padding: 3.5% 8%;
+    border-radius: 7px;
+    margin-top: 5%;
+}
+
+.div-appointment form div button{
+    margin-top: 4%;
+}
+
+.div-appointment{
+    padding-top: 2%;
+}
