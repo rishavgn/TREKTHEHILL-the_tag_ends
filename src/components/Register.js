@@ -20,32 +20,38 @@ export default function Register() {
             }
         })
     }
-
-    async function handleSubmit  (event) {
-        event.preventDefault()
+  const PostData = async (e) => {
+  
+        e.preventDefault();
         // submitToApi(formData)
         const{name, email, password, confPass} = user;
-        const res = await fetch('/register', {
+        try{
+        const res = await fetch('http://localhost:5000/register', {
             method:"POST",
-            headers:{
+            headers: {
                 "Content-Type": "application/json"
             },
             body:JSON.stringify({
                 name, email, password, confPass
             })
         });
-        const data = await res.json();
-        if(data.status === 422 || !data){
-            window.alert("Invalid Registration");
-            console.log("invalid registraiton");
-        }
-        else{
-            window.alert("Registraiotn succesful");
-            console.log("sucessful registarion");
-            history("/login");
-        }
+        console.log(res);
+        if(res.status === 422 || !res){
+          window.alert("Invalid Registration");
+          console.log("invalid registraiton");
+      }
+      else{
+          window.alert("Registraiotn succesful");
+          console.log("sucessful registarion");
+          history("/login");
+      }
+      } catch(error) {
+  console.log(error)
+      }
+       
+        
 
-        console.log(user)
+      
     }
 
    
@@ -65,7 +71,7 @@ export default function Register() {
             <div className="box_pag">
         <div className="login_card">
         <h2 class="gJPMca">Register as a patient</h2>
-            <form method='POST' onSubmit={handleSubmit}>
+            <form method="POST" onSubmit={PostData} >
                 
                 <div className="email_div">
                     <label htmlFor="name" id="head_lablel">Name</label>
@@ -83,6 +89,8 @@ export default function Register() {
                 />
                 </div>
 
+              
+
                 <div className="password_div">
                <label id='head_label'>password</label>
                 <input id='head_input' name='password' type="password" placeholder='Enter your password'
@@ -97,7 +105,7 @@ export default function Register() {
                  onChange={handlechange}/>
                 </div>
 
-               <button className='btn_login'>Signup</button>
+               <input type="submit" className='btn_login' value="register"  />
 
                <NavLink to='/login' className="signup_image">i am already registered</NavLink>
             </form>

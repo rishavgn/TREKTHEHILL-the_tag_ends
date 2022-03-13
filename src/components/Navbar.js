@@ -23,7 +23,7 @@ export default function Navbar() {
           <NavLink class="nav-link" id='link_route' to="/doctor">Doctor Portal</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" id='link_route' to="/register">sign up</NavLink>
+          <NavLink class="nav-link" id='link_route' to="/registeri">sign up</NavLink>
         </li>
         <li class="nav-item">
           <NavLink class="nav-link" id='link_route' to="/login">sign in</NavLink>

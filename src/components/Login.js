@@ -1,5 +1,6 @@
 import React from 'react'
 import './login.css';
+import axios from 'axios';
 
 
 export default function Login() {
@@ -18,8 +19,20 @@ export default function Login() {
 }
 
   function handleSubmit(event) {
+    const {email, password} = user;
     event.preventDefault()
     // submitToApi(formData)
+    const payload = {
+      email:email,
+      password:password
+    }
+    axios.post('/signin', payload)
+    .then(()=>{
+      console.log("added")
+    })
+    .catch((e)=>{
+   console.log("unable :" + e)
+    })
     console.log(user)
 }
   return (

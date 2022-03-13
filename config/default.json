@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://thetag:iamhero@cluster0.iamql.mongodb.net/medicportal?retryWrites=true&w=majority",
+    "secretOrKey": "iamrishavgandhiinnitrr"
+}

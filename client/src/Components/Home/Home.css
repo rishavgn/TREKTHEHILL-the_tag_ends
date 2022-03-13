@@ -1,0 +1,149 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+p{
+    font-weight: 500;
+    line-height: 2;
+    font-size: 1.1rem;
+}
+
+.main_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_box_child-1{
+    display: flex;
+}
+
+.left_box{
+    /* position: absolute; */
+    /* left: 0; */
+    width: 48%;
+    margin: 3%;
+    padding: 5%;
+}
+.right_box{
+    /* position: absolute; */
+    /* right: 0; */
+    width: 30%;
+    margin-top: 8.5%;
+    margin-right: 6%;
+}
+
+.form_box{
+    background-color: rgb(255, 255, 255);
+
+}
+
+.right_box h2{
+    text-align: center;
+    margin-top:20px ;
+}
+
+
+
+.email_div, .password_div{
+    display: block;
+    user-select: none;
+    position: relative;
+    transition: opacity 150ms ease-in-out 0s;
+}
+
+#head_label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.57;
+    color: white;
+    margin-bottom: 8px;
+}
+
+#head_input{
+    height: 44px;
+    border: 1px solid #adacac;
+    padding: 0px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #37373a;
+    width: 100%;
+    transition: border-color 250ms ease-in-out 0s;
+    line-height: 1.5;
+    box-sizing: border-box;
+    appearance: none;
+    transition: 0.1s ease-in all;
+}
+
+#head_input:hover{
+    border: 1px solid #28FFBF;
+
+}
+
+#head_input:focus{
+    border: 2px solid #28FFBF;
+    outline: none;
+}
+
+.btn_login {   
+    padding: 0.9rem 4rem;
+        outline: none;
+        border: 1px solid transparent;
+        border-radius: 7px;
+        background-color: #28DF99;
+        color: white;
+        transition: 0.1s ease-in all;
+        font-weight: 500;
+}
+
+.btn_login:hover{
+    background: transparent;
+    color: #04DEAD;
+    border: 1px solid #28DF99;
+}
+
+.email_div textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 10px;
+    border: 1px solid #adacac;
+    transition: 0.2s ease-in all;
+}
+
+.email_div textarea:hover{
+    border: 1px solid #28FFBF;
+    outline: none;
+}
+
+.email_div textarea:focus{
+    border: 1px solid #28FFBF;
+    outline: none;
+}
+
+
+.main_box_child-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.main_box_child-2 #location-feature{
+    width: 40%;
+}
+
+.thankyou{
+    width: 70%;
+    margin: auto;
+    font-size: 5rem;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+} 
